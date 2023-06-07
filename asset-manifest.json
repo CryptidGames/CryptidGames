@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/cryptidgames.github.io/CryptidGames/static/css/main.db3bac5b.css",
+    "main.js": "/cryptidgames.github.io/CryptidGames/static/js/main.4d72c3e8.js",
+    "static/media/Ufovisualizerbuilds Screenshot 2023.02.08 - 10.05.06.15.png": "/cryptidgames.github.io/CryptidGames/static/media/Ufovisualizerbuilds Screenshot 2023.02.08 - 10.05.06.15.f5275b3655db1a7ffa44.png",
+    "static/media/AboutPage.png": "/cryptidgames.github.io/CryptidGames/static/media/AboutPage.9f53075a3af3d2773f3e.png",
+    "static/media/SignInPage.png": "/cryptidgames.github.io/CryptidGames/static/media/SignInPage.d6e21a86af7108cac219.png",
+    "static/media/RegisterUserPage.png": "/cryptidgames.github.io/CryptidGames/static/media/RegisterUserPage.dc86c0223f7b8a028e3d.png",
+    "static/media/Ufovisualizerbuilds Screenshot 2023.04.06 - 11.08.23.05.png": "/cryptidgames.github.io/CryptidGames/static/media/Ufovisualizerbuilds Screenshot 2023.04.06 - 11.08.23.05.be55754cc81fe839a1cc.png",
+    "static/media/GamesPage.png": "/cryptidgames.github.io/CryptidGames/static/media/GamesPage.b6c73c0d72fc8e1f3015.png",
+    "index.html": "/cryptidgames.github.io/CryptidGames/index.html",
+    "main.db3bac5b.css.map": "/cryptidgames.github.io/CryptidGames/static/css/main.db3bac5b.css.map",
+    "main.4d72c3e8.js.map": "/cryptidgames.github.io/CryptidGames/static/js/main.4d72c3e8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.db3bac5b.css",
+    "static/js/main.4d72c3e8.js"
+  ]
+}
