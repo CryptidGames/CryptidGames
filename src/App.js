@@ -22,7 +22,7 @@ import SignIn from './components/pages/SignIn';
 function App() {
   return (
     <>
-    <Router basename={"process.env.PUBLIC_URL"}>
+    <Router basename={process.env.PUBLIC_URL || ''}>
       <Navbar />
       <Routes>
         <Route path='/' exact Component={ Home } />

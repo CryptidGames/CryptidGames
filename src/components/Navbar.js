@@ -38,27 +38,27 @@ function Navbar() {
             </div>
             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                 <li className='nav-item'>
-                    <Link to={process.env.PUBLIC_URL + '/About'} className='nav-links' onClick={closeMobileMenu}>
+                    <Link to={process.env.PUBLIC_URL || '' + '/About'} className='nav-links' onClick={closeMobileMenu}>
                         About
                     </Link>
                 </li>
                 <li className='nav-item'>
-                    <Link to={process.env.PUBLIC_URL + '/Games'} className='nav-links' onClick={closeMobileMenu}>
+                    <Link to={process.env.PUBLIC_URL || '' + '/Games'} className='nav-links' onClick={closeMobileMenu}>
                         Games
                     </Link>
                 </li>
                 <li className='nav-item'>
-                    <Link to={process.env.PUBLIC_URL + '/GamePlayVideo'} className='nav-links' onClick={closeMobileMenu}>
+                    <Link to={process.env.PUBLIC_URL || '' + '/GamePlayVideo'} className='nav-links' onClick={closeMobileMenu}>
                         Videos
                     </Link>
                 </li>
                 <li className='nav-item'>
-                    <Link to={process.env.PUBLIC_URL + '/RegisterUser'} className='nav-links-mobile' onClick={closeMobileMenu}>
+                    <Link to={process.env.PUBLIC_URL || '' + '/RegisterUser'} className='nav-links-mobile' onClick={closeMobileMenu}>
                         Register User
                     </Link>
                 </li>
                 <li className='nav-item'>
-                    <Link to={process.env.PUBLIC_URL + '/SignIn'} className='nav-links-mobile' onClick={closeMobileMenu}>
+                    <Link to={process.env.PUBLIC_URL || '' + '/SignIn'} className='nav-links-mobile' onClick={closeMobileMenu}>
                         Sign In
                     </Link>
                 </li>
