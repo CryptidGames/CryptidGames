@@ -4,7 +4,7 @@ import StartFirebase from '../Firebase/Index';
 import { Button } from '../Button';
 import {Link} from '@imtbl/imx-sdk';
 import UserCreated from '../../components/pages/UserCreated';
-import { BrowserRouter as Router, Routes, Route, useNavigate, Navigate } from 'react-router-dom'; 
+import { HashRouter as Router, Routes, Route, useNavigate, Navigate } from 'react-router-dom'; 
 
 export class Crud extends React.Component{
     constructor(props){
