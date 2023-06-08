@@ -22,11 +22,10 @@ import SignIn from './components/pages/SignIn';
 function App() {
   return (
     <>
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router basename={"/CryptidGames"}>
       <Navbar />
       <Routes>
         <Route path='/' exact Component={ Home } />
-        <Route path='/CryptidGames/' exact Component={ Home } />
         <Route path='/Home' exact Component={ Home } />
         <Route path='/About' exact Component={ About } />
         <Route path='/GamePlayVideo' exact Component={ GamePlayVideo } />
