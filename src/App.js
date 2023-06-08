@@ -22,7 +22,7 @@ import SignIn from './components/pages/SignIn';
 function App() {
   return (
     <>
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router basename={window.location.pathname}>
       <Navbar />
       <Routes>
         <Route path='/' exact Component={ Home } />
@@ -43,7 +43,7 @@ function App() {
         <Route path='/UserCreated' Component={ UserCreated } />
         <Route path='/SignIn' Component={ SignIn } />
       </Routes>
-      </Router>
+    </Router>
     </>
   );
 }

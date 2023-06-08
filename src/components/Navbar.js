@@ -29,7 +29,7 @@ function Navbar() {
     <>
       <nav className="navbar">
         <div className="navbar-container">
-            <Link to='/Home' className='navbar-logo' onClick= {closeMobileMenu}>
+            <Link to={window.location.pathname + '/Home'} className='navbar-logo' onClick= {closeMobileMenu}>
                 <img src="./images/Ufovisualizerbuilds Screenshot 2023.04.06 - 11.08.12.59.png" alt='' height='60' width="100"></img>
             </Link>
             <div className='menu-icon' onClick={handleClick}>
@@ -38,27 +38,27 @@ function Navbar() {
             </div>
             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                 <li className='nav-item'>
-                    <Link to='/About' className='nav-links' onClick={closeMobileMenu}>
+                    <Link to={window.location.pathname + '/About'} className='nav-links' onClick={closeMobileMenu}>
                         About
                     </Link>
                 </li>
                 <li className='nav-item'>
-                    <Link to='/Games' className='nav-links' onClick={closeMobileMenu}>
+                    <Link to={window.location.pathname + '/Games'} className='nav-links' onClick={closeMobileMenu}>
                         Games
                     </Link>
                 </li>
                 <li className='nav-item'>
-                    <Link to='/GamePlayVideo' className='nav-links' onClick={closeMobileMenu}>
+                    <Link to={window.location.pathname + '/GamePlayVideo'} className='nav-links' onClick={closeMobileMenu}>
                         Videos
                     </Link>
                 </li>
                 <li className='nav-item'>
-                    <Link to='/RegisterUser' className='nav-links-mobile' onClick={closeMobileMenu}>
+                    <Link to={window.location.pathname + '/RegisterUser'} className='nav-links-mobile' onClick={closeMobileMenu}>
                         Register User
                     </Link>
                 </li>
                 <li className='nav-item'>
-                    <Link to='/SignIn' className='nav-links-mobile' onClick={closeMobileMenu}>
+                    <Link to={window.location.pathname + '/SignIn'} className='nav-links-mobile' onClick={closeMobileMenu}>
                         Sign In
                     </Link>
                 </li>
