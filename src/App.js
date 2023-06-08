@@ -21,7 +21,6 @@ import SignIn from './components/pages/SignIn';
 
 function App() {
   return (
-    <>
     <Router basename={process.env.PUBLIC_URL || ''}>
       <Navbar />
       <Routes>
@@ -44,7 +43,6 @@ function App() {
         <Route path='/SignIn' Component={ SignIn } />
       </Routes>
     </Router>
-    </>
   );
 }
 
