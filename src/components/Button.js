@@ -15,7 +15,7 @@ export const Button = ({dest, id, children, type, onClick, buttonStyle,
         : SIZES[0];
 
         return (
-            <Link to={ process.env.PUBLIC_URL || '' + dest } className='btn-mobile'>
+            <Link to={ dest } className='btn-mobile'>
                 <button
                 className={`btn ${checkButtonStyle} ${checkButtonSize}`}
                 onClick={onClick}

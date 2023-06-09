@@ -21,7 +21,7 @@ import SignIn from './components/pages/SignIn';
 
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL || ''}>
+    <Router>
       <Navbar />
       <Routes>
         <Route path='/' exact Component={ Home } />

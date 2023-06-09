@@ -29,7 +29,7 @@ function Navbar() {
     <>
       <nav className="navbar">
         <div className="navbar-container">
-            <Link to={process.env.PUBLIC_URL + '/Home'} className='navbar-logo' onClick= {closeMobileMenu}>
+            <Link to={'/Home'} className='navbar-logo' onClick= {closeMobileMenu}>
                 <img src="./images/Ufovisualizerbuilds Screenshot 2023.04.06 - 11.08.12.59.png" alt='' height='60' width="100"></img>
             </Link>
             <div className='menu-icon' onClick={handleClick}>
@@ -38,27 +38,27 @@ function Navbar() {
             </div>
             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                 <li className='nav-item'>
-                    <Link to={process.env.PUBLIC_URL || '' + '/About'} className='nav-links' onClick={closeMobileMenu}>
+                    <Link to={'/About'} className='nav-links' onClick={closeMobileMenu}>
                         About
                     </Link>
                 </li>
                 <li className='nav-item'>
-                    <Link to={process.env.PUBLIC_URL || '' + '/Games'} className='nav-links' onClick={closeMobileMenu}>
+                    <Link to={'/Games'} className='nav-links' onClick={closeMobileMenu}>
                         Games
                     </Link>
                 </li>
                 <li className='nav-item'>
-                    <Link to={process.env.PUBLIC_URL || '' + '/GamePlayVideo'} className='nav-links' onClick={closeMobileMenu}>
+                    <Link to={'/GamePlayVideo'} className='nav-links' onClick={closeMobileMenu}>
                         Videos
                     </Link>
                 </li>
                 <li className='nav-item'>
-                    <Link to={process.env.PUBLIC_URL || '' + '/RegisterUser'} className='nav-links-mobile' onClick={closeMobileMenu}>
+                    <Link to={'/RegisterUser'} className='nav-links-mobile' onClick={closeMobileMenu}>
                         Register User
                     </Link>
                 </li>
                 <li className='nav-item'>
-                    <Link to={process.env.PUBLIC_URL || '' + '/SignIn'} className='nav-links-mobile' onClick={closeMobileMenu}>
+                    <Link to={'/SignIn'} className='nav-links-mobile' onClick={closeMobileMenu}>
                         Sign In
                     </Link>
                 </li>
