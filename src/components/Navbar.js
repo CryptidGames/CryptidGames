@@ -30,10 +30,10 @@ function Navbar() {
       <nav className="navbar">
         <div className="navbar-container">
             <Link to={'/Home'} className='navbar-logo' onClick= {closeMobileMenu}>
-                <img src="./images/Ufovisualizerbuilds Screenshot 2023.04.06 - 11.08.12.59.png" alt='' height='60' width="100"></img>
+                <img src="./images/Home.png" alt='' height='60' width="120"></img>
             </Link>
             <div className='menu-icon' onClick={handleClick}>
-                <img src={click ? "./images/Ufovisualizerbuilds Screenshot 2023.02.08 - 10.05.04.52.png" : "./images/Ufovisualizerbuilds Screenshot 2023.02.08 - 10.05.47.02.png"} alt='' height="100" width="100">
+                <img src={click ? "./images/MenuOpen.png" : "./images/MenuClosed.png"} alt='' height="60" width="60">
                 </img>
             </div>
             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
