@@ -23,6 +23,9 @@
 }
 
 .about {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
   background-image: url('/public/images/AboutPage.png');
   background-position: center;
   background-size: cover;
@@ -35,9 +38,17 @@
   font-size: 80px;
 }
 
+.about > h5{
+  margin-top: 100px;
+  padding-inline: 500px;
+  color: #32beff;
+  font-size: 38px;
+  margin-bottom: 100px;
+}
+
 .aboutP {
   color: #32beff;
-  font-size: 32px;
+  font-size: 22px;
   z-index: 1;
   padding-inline: 500px;
   margin-bottom: 50px;
@@ -52,6 +63,8 @@
 }
 
 .gameplayvideo {
+  height: 100vh;
+  width: 100%;
   background-image: url('/public/images/Ufovisualizerbuilds\ Screenshot\ 2023.04.06\ -\ 11.08.23.05.png');
   background-position: center;
   background-size: cover;
@@ -61,6 +74,9 @@
 }
 
 .hc_uap {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
   background-image: url('/public/images/Ufovisualizerbuilds Screenshot 2023.02.08 - 10.05.06.15.png');
   background-position: center;
   background-size: cover;
@@ -87,6 +103,9 @@
 }
 
 .trailer1 {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
   background-image: url('');
   background-position: center;
   background-size: cover;
@@ -96,6 +115,9 @@
 }
 
 .trailer2 {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
   background-image: url('');
   background-position: center;
   background-size: cover;
@@ -105,6 +127,9 @@
 }
 
 .trailer4 {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
   background-image: url('');
   background-position: center;
   background-size: cover;
@@ -114,6 +139,8 @@
 }
 
 .games {
+  height: 100vh;
+  width: 100%;
   background-image: url('/public/images/GamesPage.png');
   background-position: center;
   background-size: cover;
@@ -123,6 +150,9 @@
 }
 
 .register-user {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
   background-image: url('/public/images/RegisterUserPage.png');
   background-position: center;
   background-size: fill;
@@ -145,6 +175,9 @@
 }
 
 .user-created {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
   background-image: url('/public/images/RegisterUserPage.png');
   background-position: center;
   background-size: fill;
@@ -161,6 +194,9 @@
 }
 
 .sign-in {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
   background-image: url('/public/images/SignInPage.png');
   background-position: center;
   background-size: cover;

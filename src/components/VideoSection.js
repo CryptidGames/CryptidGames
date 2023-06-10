@@ -8,11 +8,11 @@ function VideoSection(){
         <video src="/videos/HappyCamperPartyUp.mp4" autoPlay loop muted />
             <h1>Cryptid Games</h1>
             <div className='video-btns'>
-                <Button dest='/RegisterUser' className='btns' buttonStyle='btn--outline'
+                <Button dest='/RegisterUser' className='btns' buttonStyle='btn--outline1'
                 buttonSize='btn--large'>
                     Register User
                 </Button>
-                <Button dest='/GamePlayVideo' className='btns' buttonStyle='btn--primary'
+                <Button dest='/GamePlayVideo' className='btns' buttonStyle='btn--outline1'
                 buttonSize='btn--large'>
                     Videos
                 </Button>

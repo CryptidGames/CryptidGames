@@ -4,7 +4,7 @@ import StartFirebase from '../Firebase/Index';
 import { Button } from '../Button';
 import {Link} from '@imtbl/imx-sdk';
 import UserCreated from '../../components/pages/UserCreated';
-import { HashRouter as Router, Routes, Route, useNavigate, Navigate } from 'react-router-dom'; 
+import { BrowserRouter as Router, Routes, Route, useNavigate, Navigate } from 'react-router-dom'; 
 
 export class Crud extends React.Component{
     constructor(props){
@@ -40,7 +40,7 @@ export class Crud extends React.Component{
                 <input type='text' id="passConfbox" value={this.state.passConf} onChange={e => {this.setState({passConf: e.target.value});}}/>
                 <br/><br/>
 
-                <Button id="addBtn" onClick={this.interface} type='btn--outline'>Create Account</Button>
+                <Button id="addBtn" buttonStyle='btn--outline1' onClick={this.interface} type='btn--outline'>Create Account</Button>
                 {/*<button id="updateBtn" onClick={this.interface}>Update Data</button>
                 <button id="deleteBtn" onClick={this.interface}>Delete Data</button>
                 <button id="selectBtn" onClick={this.interface}>Get Data from DB</button>*/}

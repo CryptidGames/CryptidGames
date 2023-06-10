@@ -8,22 +8,20 @@ export default function About() {
     <>
     <h1 className='about'>
         About
+      <h5>
+      Cryptid Games is an independent game studio solely operated by Alleck Henrie,
+      and is based out of Los Angeles, CA. The Happy Camper series is focused on
+      creating unique gameplay experiences for every player, with audio as the driver.
+      </h5>
       <p className='aboutP'>
-      In this game, the UFO will listen to whatever audio your computer is playing
-       and turn it into attacks/movements. Try not to get abducted, or hypnotized, 
-       by the mesmerizing light show! Every song creates a different experience 
-       and level of difficulty, making the gameplay 100% unique for the player's
-       audio of choice. Listen to anything from music, to movies, and even your friends
-       voices on voice-chat and see if you can survive...
-      </p>
-      <p className='aboutP'>
-        Check out our Instagram and my Portfolio for more!
+      If you would like to find out more about the studio, or about me as a developer,
+      please visit the links below!
       </p>
 
-      <Button onClick={() => { window.location.href = "https://www.instagram.com/cryptid_games_studio/"; } }>
+      <Button buttonStyle='btn--outline1' onClick={() => { window.location.href = "https://www.instagram.com/cryptid_games_studio/"; } }>
         Instagram
       </Button>
-      <Button onClick={() => { window.location.href = "https://alleckmh94.wixsite.com/amh-games"; } }>
+      <Button buttonStyle='btn--outline1' onClick={() => { window.location.href = "https://alleckmh94.wixsite.com/amh-games"; } }>
         Portfolio
       </Button>
     </h1>
