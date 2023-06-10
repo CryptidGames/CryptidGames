@@ -25,7 +25,6 @@
 .about {
   height: 100vh;
   width: 100%;
-  position: fixed;
   background-image: url('/public/images/AboutPage.png');
   background-position: center;
   background-size: cover;
@@ -152,7 +151,6 @@
 .register-user {
   height: 100vh;
   width: 100%;
-  position: fixed;
   background-image: url('/public/images/RegisterUserPage.png');
   background-position: center;
   background-size: fill;
