@@ -122,7 +122,7 @@ export class Crud extends React.Component{
                                 // fix this if statement. We need to look and see if they have an HC: UAP NFT,
                                 // then we need to check if that NFT has been redeemed before. 
                                 // If it has, then we need to revoke the NFT from the old wallet's
-                                if (asset.collection.name == "Gods Unchained Cards") {
+                                if (asset.collection.name == "Undead Blocks Exclusives Vault (UBEXCLUSIVESVAULT)") {
                                     data.nfts = data.nfts + "$$" + asset.name;
                                     get(child(dbref, 'Redeemed'+asset.id)).then(async (snapshot) =>{
                                         // Add to look for NFT being registered already  
@@ -208,7 +208,7 @@ export class Crud extends React.Component{
                             // fix this if statement. We need to look and see if they have an HC: UAP NFT,
                             // then we need to check if that NFT has been redeemed before. 
                             // If it has, then we need to revoke the NFT from the old wallet's
-                            if (asset.collection.name == "Gods Unchained Cards") {
+                            if (asset.collection.name == "Undead Blocks Exclusives Vault (UBEXCLUSIVESVAULT)") {
                                 data.nfts = data.nfts + "$$" + asset.name;
                                 get(child(dbref, 'Redeemed'+asset.id)).then(async (snapshot) =>{
                                     // Add to look for NFT being registered already  
