@@ -11,7 +11,7 @@
 }
 
 .btn1 {
-    margin-top: 50px;
+    margin-top: 30px;
     padding: 8px 20px;
     border-radius: 2px;
     outline: none;
@@ -34,6 +34,15 @@
 }
 
 .btn--outline1 {
+    background-color: #ff0000a4;
+    color: #00c3ff;
+    padding: 8px 20px;
+    border: 2px solid #ff00ff;
+    transition: all 0.3s ease-out;
+}
+
+.btn--outline2 {
+    margin-bottom: 30px;
     background-color: #ff0000a4;
     color: #00c3ff;
     padding: 8px 20px;
