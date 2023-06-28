@@ -12,8 +12,9 @@ export default function About() {
       Cryptid Games is an independent game studio solely operated by Alleck Henrie,
       and is based out of Los Angeles, CA. The Happy Camper series is focused on
       creating unique gameplay experiences for every player, with audio as the driver.
-      </h5>
-      <p className='aboutP'>
+      In order to play Happy Camper: Unidentified Ariel Phenomenon, you have to currently
+      own an HC: UAP NFT!
+      </h5>      <p className='aboutP'>
       If you would like to find out more about the studio, or about me as a developer,
       please visit the links below!
       </p>
