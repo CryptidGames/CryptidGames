@@ -13,7 +13,7 @@ export default function About() {
       and is based out of Los Angeles, CA. The Happy Camper series is focused on
       creating unique gameplay experiences for every player, with audio as the driver.
       In order to play Happy Camper: Unidentified Ariel Phenomenon, you have to currently
-      own an HC: UAP NFT!
+      own a Happy Camper: U.A.P. NFT!
       </h5>      <p className='aboutP'>
       If you would like to find out more about the studio, or about me as a developer,
       please visit the links below!
