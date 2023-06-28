@@ -25,7 +25,6 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' exact Component={ Home } />
-        <Route path='/CryptidGames/' exact Component={ Home } />
         <Route path='/Home' exact Component={ Home } />
         <Route path='/About' exact Component={ About } />
         <Route path='/GamePlayVideo' exact Component={ GamePlayVideo } />

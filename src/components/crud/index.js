@@ -123,7 +123,8 @@ export class Crud extends React.Component{
                                 // then we need to check if that NFT has been redeemed before. 
                                 // If it has, then we need to revoke the NFT from the old wallet's
                                 if (asset.collection.name == "Undead Blocks Exclusives Vault (UBEXCLUSIVESVAULT)") {
-                                    data.nfts = data.nfts + "$$" + asset.name;
+                                    data.HCNFTS = data.HCNFTS + "$$" + asset.name;
+                                    data.nfts = data.nfts + "$$" + asset.id;
                                     get(child(dbref, 'Redeemed'+asset.id)).then(async (snapshot) =>{
                                         // Add to look for NFT being registered already  
                                                 set(ref(db, 'Redeemed/' +asset.id),
@@ -149,7 +150,8 @@ export class Crud extends React.Component{
                                         {
                                             username: data.username,
                                             password: data.password,
-                                            HCNFTS: data.nfts,
+                                            HCNFTS: data.HCNFTS,
+                                            nfts: data.nfts,
                                         })
                                         .then(() =>{
                                             alert('User was created Successfully!\nYou can now login to the game.')
