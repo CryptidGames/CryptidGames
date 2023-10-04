@@ -2,7 +2,7 @@ import React from 'react';
 import '../../App.css';
 import Cards from '../Cards';
 import { Button } from '../Button';
-import {Link} from 'react-router-dom';
+import UFOMotor from './UFOMotor.cs';
 
 export default function ExampleCode() {
     return (
@@ -15,7 +15,7 @@ export default function ExampleCode() {
       and some UI animations.
       </h5>      
       <p className='examplecodeP'>
-      <a href="/public/images/UFOMotor.cs" download="UFOMotor.cs" target="_blank">UFOMotor.cs</a>
+      <a href={UFOMotor} download="UFOMotor.cs" target="_blank" rel="noreferrer"><p className='examplecodeL'>UFOMotor.cs</p></a>
       </p>
     </h1>
     </>
