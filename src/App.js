@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from
 'react-router-dom';
 import Home from './components/pages/Home';
 import About from './components/pages/About';
+import ExampleCode from './components/pages/ExampleCode';
 import GamePlayVideo from './components/pages/GamePlayVideo';
 import Trailer1 from './components/pages/Trailer1';
 import Trailer2 from './components/pages/Trailer2';
@@ -27,6 +28,7 @@ function App() {
         <Route path='/' exact Component={ Home } />
         <Route path='/Home' exact Component={ Home } />
         <Route path='/About' exact Component={ About } />
+        <Route path='/ExampleCode' exact Component={ ExampleCode } />
         <Route path='/GamePlayVideo' exact Component={ GamePlayVideo } />
         <Route path='/Trailer1' exact Component={ Trailer1 } />
         <Route path='/Trailer2' exact Component={ Trailer2 } />
