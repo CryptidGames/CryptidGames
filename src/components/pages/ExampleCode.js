@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../App.css';
+import { Document } from 'react-pdf';
 import Cards from '../Cards';
 import { Button } from '../Button';
 
@@ -15,10 +16,9 @@ export default function ExampleCode() {
       </h5>      <p className='examplecodeP'>
       If you would like the full CS file, click the download below!
       </p>
-
-      <object data="/public/images/UFOMotor.pdf" type="application/pdf" width="100%" height="100%">
-        <p>Alternative text - include a link <a href="/public/images/UFOMotor.pdf">to the PDF!</a></p>
-      </object>
+      <div>
+      <Document file = "/public/images/UFOMotor.pdf"/>
+      </div>
     </h1>
     </>
     );
