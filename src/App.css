@@ -7,6 +7,7 @@
 
 .about,
 .gameplayvideo,
+.examplecode,
 .trailer1,
 .trailer2,
 .games,
@@ -60,6 +61,46 @@
   padding-inline: 500px;
   margin-bottom: 10px;
 }
+
+.examplecode {
+  height: 100vh;
+  width: 100%;
+  background-image: url('/public/images/AboutPage.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  color: #32beff;
+  font-size: 80px;
+}
+
+.examplecode > h5{
+  margin-top: 50px;
+  padding-inline: 500px;
+  color: #32beff;
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+
+.examplecodeP {
+  color: #32beff;
+  font-size: 18px;
+  z-index: 1;
+  padding-inline: 500px;
+  margin-bottom: 30px;
+}
+
+.examplecodeL {
+  color: #32beff;
+  font-size: 20px;
+  z-index: 1;
+  padding-inline: 500px;
+  margin-bottom: 10px;
+}
+
 
 .gameplayvideo {
   height: 100vh;
