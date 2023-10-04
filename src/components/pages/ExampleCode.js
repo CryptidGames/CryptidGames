@@ -6,7 +6,7 @@ import { Button } from '../Button';
 export default function ExampleCode() {
     return (
     <>
-    <h1 className='ExampleCode'>
+    <h1 className='examplecode'>
         Example Code
       <h5>
       Here is an example of my code used in the game. The code provided is the 
@@ -15,7 +15,7 @@ export default function ExampleCode() {
       <object data="/public/images/UFOMotor.pdf" type="application/pdf" width="100%" height="100%">
         <p>Alternative text - include a link <a href="/public/images/UFOMotor.pdf">to the PDF!</a></p>
       </object>
-      </h5>      <p className='ExampleCodeP'>
+      </h5>      <p className='examplecodeP'>
       If you would like the full CS file, click the download below!
       </p>
 
