@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../App.css';
-import { Document } from 'react-pdf';
+import { pdfjs  } from 'react-pdf';
 import Cards from '../Cards';
 import { Button } from '../Button';
 
@@ -17,7 +17,8 @@ export default function ExampleCode() {
       If you would like the full CS file, click the download below!
       </p>
       <div>
-      <Document file = "/public/images/UFOMotor.pdf"/>
+      <pdfjs  file = "/public/images/UFOMotor.pdf">
+      </pdfjs >
       </div>
     </h1>
     </>
