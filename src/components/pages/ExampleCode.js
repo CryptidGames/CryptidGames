@@ -19,13 +19,6 @@ export default function ExampleCode() {
       <object data="/public/images/UFOMotor.pdf" type="application/pdf" width="100%" height="100%">
         <p>Alternative text - include a link <a href="/public/images/UFOMotor.pdf">to the PDF!</a></p>
       </object>
-      
-      <Button buttonStyle='btn--outline1' onClick={() => { window.location.href = "https://www.instagram.com/cryptid_games_studio/"; } }>
-        Instagram
-      </Button>
-      <Button buttonStyle='btn--outline1' onClick={() => { window.location.href = "https://alleckmh94.wixsite.com/amh-games"; } }>
-        Portfolio
-      </Button>
     </h1>
     </>
     );
