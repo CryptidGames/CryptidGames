@@ -15,7 +15,7 @@ export default function ExampleCode() {
       and some UI animations.
       </h5>      
       <p className='examplecodeP'>
-      <Link to="/public/images/UFOMotor.cs" target="_blank" download>UFOMotor.cs</Link>
+      <Link to="/public/images/UFOMotor.pdf" href="/public/images/UFOMotor.pdf" download>UFOMotor.cs</Link>
       </p>
     </h1>
     </>
