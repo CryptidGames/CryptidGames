@@ -140,7 +140,7 @@ public class UFOMotor : MonoBehaviour
         minHeight = originalHeight - maxLower;
         maxHeight = originalHeight + maxRaise;
 
-        // List of orbs currently controlled by the UFO
+        // Dictionary of UFO lights that spawn orbs, along with their list of active orbs
         orbs = new Dictionary<GameObject, List<GameObject>>();
 
         // Used to properly calculate if the ufo is currently rising or falling, 
@@ -237,27 +237,19 @@ public class UFOMotor : MonoBehaviour
     {
         if (visOn && !visualizer)
         {
-            List<List<GameObject>> orbsToRemove = new List<List<GameObject>>();
-
-            foreach (List<GameObject> orbLists in orbs.Values)
-            {
-                foreach (GameObject orb in orbLists)
-                {
-                    Destroy(orb);
-                }
-            }
-
-            orbs = new Dictionary<GameObject, List<GameObject>>();
-            visualize = false;
-            attacking = false;
-            musicPlaying = 0;
-
             // if the scores are showing, remove scores
             if (!scoresGone)
             {
                 ui.Play("RemovePrevScores");
                 scoresGone = true;
             }
+
+            // Remove the orbs from the scene
+            RemoveOrbs();
+
+            visualize = false;
+            attacking = false;
+            musicPlaying = 0;
 
             visualizer = true;
         }
@@ -266,17 +258,9 @@ public class UFOMotor : MonoBehaviour
             // Default UI
             ui.Play("NoAudio");
 
-            List<List<GameObject>> orbsToRemove = new List<List<GameObject>>();
+            // Remove the orbs from the scene
+            RemoveOrbs();
 
-            foreach (List<GameObject> orbLists in orbs.Values)
-            {
-                foreach (GameObject orb in orbLists)
-                {
-                    Destroy(orb);
-                }
-            }
-
-            orbs = new Dictionary<GameObject, List<GameObject>>();
             scoresGone = false;
             attacking = false;
             intro = true;
@@ -324,17 +308,8 @@ public class UFOMotor : MonoBehaviour
             if (!visualizer)
                 ui.Play("NoAudio");
 
-            List<List<GameObject>> orbsToRemove = new List<List<GameObject>>();
-
-            foreach (List<GameObject> orbLists in orbs.Values)
-            {
-                foreach (GameObject orb in orbLists)
-                {
-                    Destroy(orb);
-                }
-            }
-
-            orbs = new Dictionary<GameObject, List<GameObject>>();
+            // Remove the orbs from the scene
+            RemoveOrbs();
 
             // if not visualizer mode, scores will show up
             if (!playerMotor.Visualize())
@@ -347,22 +322,44 @@ public class UFOMotor : MonoBehaviour
     // Spawn and initialize an Orb
     private void SpawnOrb()
     {
+        // Instantiate an orb at the light's location
         GameObject go = Instantiate(orb, newLight.transform);
         go.SetActive(true);
+
+        // Initialize the orb's lights
         go.GetComponent<OrbMotor>().setLight(newLight);
 
+        // if the newLight isn't in orbs, add it along with a new orb list
         if (!orbs.ContainsKey(newLight))
         {
             List<GameObject> newList = new List<GameObject>();
             orbs.Add(newLight, newList);
         }
 
+        // add the current orb to the UFO light in orbs
         orbs[newLight].Add(go);
 
+        // for every orb that's spawned, currently active orbs get a speed boost
         for (int i = 0; i < orbs[newLight].Count; i++)
             orbs[newLight][i].GetComponent<OrbMotor>().sendBeat();
 
         orbSpawn = false;
+    }
+
+    // Remove the active orbs from the scene
+    private void RemoveOrbs()
+    {
+        // iterate through the orbs list and destroy all active orbs in the scene
+        foreach (List<GameObject> orbLists in orbs.Values)
+        {
+            foreach (GameObject orb in orbLists)
+            {
+                Destroy(orb);
+            }
+        }
+
+        // Reinitialize orbs list
+        orbs = new Dictionary<GameObject, List<GameObject>>();
     }
 
     // Get spectrum data from SoundCapture and fill the data into m_audioSpectrum
