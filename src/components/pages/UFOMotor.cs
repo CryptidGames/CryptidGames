@@ -291,17 +291,11 @@ public class UFOMotor : MonoBehaviour
                 if (!ui.GetCurrentAnimatorStateInfo(0).IsName("RUN"))
                     intro = false;
             }
-
-            // if spawning an Orb, 
-            if (orbSpawn)
-            {
-                // spawn an Orb
-                SpawnOrb();
-            }
         }
 
         else
         {
+            // if there is no audio, the UFO stops attacking
             attacking = false;
 
             // if the UFO is not in visualizer mode, Default UI
@@ -315,6 +309,7 @@ public class UFOMotor : MonoBehaviour
             if (!playerMotor.Visualize())
                 scoresGone = false;
 
+            // Reset bool for ui intro
             intro = true;
         }
     }
@@ -342,8 +337,6 @@ public class UFOMotor : MonoBehaviour
         // for every orb that's spawned, currently active orbs get a speed boost
         for (int i = 0; i < orbs[newLight].Count; i++)
             orbs[newLight][i].GetComponent<OrbMotor>().sendBeat();
-
-        orbSpawn = false;
     }
 
     // Remove the active orbs from the scene
@@ -384,11 +377,11 @@ public class UFOMotor : MonoBehaviour
     // This method is designed to tell the UFO what to do
     public void action(string newAction, GameObject light)
     {
+        attacking = true;
+
         // Used to teleport the UFO into a random but closer location to the player
         if (newAction == "Teleport")
         {
-            attacking = true;
-
             // Each jump is a random strength between 1/3 of teleStr, to 3/3 teleStr
             jumpStr = Random.Range(teleStr * 0.33f, teleStr);
 
@@ -425,16 +418,15 @@ public class UFOMotor : MonoBehaviour
         // Used to spawn an orb from the UFO
         else if (newAction == "SpawnOrb")
         {
-            attacking = true;
-            orbSpawn = true;
+            // Set newLight to the light provided
             newLight = light;
+
+            SpawnOrb();
         }
 
         // Used to spawn a wall in front of the character
         else if (newAction == "SpawnWall")
         {
-            attacking = true;
-
             // Formula used to calulcate a random position in front of the character to spawn the wall
             Vector3 wallSpawn = new Vector3(playerMotor.getWall().transform.position.x + Random.Range(-10, 10), 0, playerMotor.getWall().transform.position.z + Random.Range(-10, 10));
 
@@ -447,7 +439,6 @@ public class UFOMotor : MonoBehaviour
         // Used to slow down the player's maximum speed
         else if (newAction == "SlowDown")
         {
-            attacking = true;
             playerMotor.slowDown();
         }
 
